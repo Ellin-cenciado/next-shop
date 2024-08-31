@@ -8,6 +8,8 @@ export function ItemContextProvider(props) {
   const createItem = (item) => {
     item.itemId = [...itemList].length;
     setItemList([...itemList, item]);
+    //!To fix, if i delete one item, and add another it makes two childs with the same key error
+    //!Doesnt add the item to the page
   };
 
   const removeItem = (itemId) => {
