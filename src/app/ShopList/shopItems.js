@@ -1,4 +1,4 @@
-export default class ShopItem{
+class ShopItem{
     static ItemCounter = 0;
     constructor(price,name,description){
         this.itemId = ShopItem.ItemCounter++;
@@ -28,3 +28,8 @@ export default class ShopItem{
         return this.itemId;
     }
 }
+
+let item1 = new ShopItem(300,"item1","description1");
+let item2 = new ShopItem(350,"item2","description2");
+let itemList = [item1,item2];
+export default itemList;

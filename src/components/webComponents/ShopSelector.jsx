@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { ShopContext } from "@/context/ShopContext";
 
 export default function ShopSelector() {
-  const {updateShop, currentShop} = useContext(ShopContext);
+  const {updateShop} = useContext(ShopContext);
   
   function handleSelect(e) { 
     updateShop(e.target.value);
