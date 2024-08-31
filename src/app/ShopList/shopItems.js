@@ -31,5 +31,4 @@ class ShopItem{
 
 let item1 = new ShopItem(300,"item1","description1");
 let item2 = new ShopItem(350,"item2","description2");
-let itemList = [item1,item2];
-export default itemList;
+export const itemList = [item1,item2];

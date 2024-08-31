@@ -8,13 +8,9 @@ export function ShopContextProvider(props) {
   const updateShop = (shop) => {
     setCurrentShop(shop);
   }
-  
-  const deleteItem = (item) => {
-    
-  }
 
   return (
-    <ShopContext.Provider value={{ currentShop, updateShop , deleteItem}}>
+    <ShopContext.Provider value={{ currentShop, updateShop}}>
       {props.children}
     </ShopContext.Provider>
   );
