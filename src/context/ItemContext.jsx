@@ -6,10 +6,9 @@ export function ItemContextProvider(props) {
   const [itemList, setItemList] = useState([]);
 
   const createItem = (item) => {
-    item.itemId = [...itemList].length;
     setItemList([...itemList, item]);
-    //!To fix, if i delete one item, and add another it makes two childs with the same key error
-    //!Doesnt add the item to the page
+    console.log("item created: \n", item);
+    console.log("itemList: \n", itemList);
   };
 
   const removeItem = (itemId) => {
@@ -18,7 +17,7 @@ export function ItemContextProvider(props) {
 
   useEffect(() => {
     setItemList(data);
-  },[]);
+  }, []);
 
   return (
     <ItemContext.Provider value={{ itemList, createItem, removeItem }}>

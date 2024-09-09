@@ -1,4 +1,4 @@
-class ShopItem{
+export class ShopItem{
     static ItemCounter = 0;
     constructor(price,name,description){
         this.itemId = ShopItem.ItemCounter++;

@@ -10,10 +10,11 @@ export default function ItemComponent({ item }) {
       <h1>{item._name}</h1>
       <h2>{item._price}</h2>
       <p>{item._description}</p>
-      {currentShop === "admin" && (
+      {currentShop === "admin" &&
+          (
         <button className="bg-red-200 rounded-md" onClick={() => removeItem(item.itemId)}>
-          Delete
-        </button>
+          Delete Id: {item.itemId}
+        </button> 
       )}
     </div>
   );
