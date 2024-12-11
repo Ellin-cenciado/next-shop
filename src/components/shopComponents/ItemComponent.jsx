@@ -16,6 +16,9 @@ export default function ItemComponent({ item }) {
           Delete Id: {item.itemId}
         </button> 
       )}
+      <button className="bg-green-200 rounded-md" onClick={() => addToCart(item.itemId)}>
+          Buy
+        </button>
     </div>
   );
 }

@@ -6,16 +6,16 @@ export class ShopItem{
         this._name = name;
         this._description = description;
     }
-    get price(){
+    getPrice(){
         return this._price;
     }
-    set price(value){
+    setPrice(value){
         this.price = value;
     }
     getName(){
         return this.name;
     }
-    set name(value){
+    setName(value){
         this._name = value;
     }
     getDescription(){
