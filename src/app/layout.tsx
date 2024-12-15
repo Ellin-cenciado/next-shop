@@ -1,5 +1,5 @@
 
-import NavBar from './NavBar.js';
+import NavBar from './NavBar';
 import { ReactNode } from 'react';
 import './globals.css';
 import React from 'react';
