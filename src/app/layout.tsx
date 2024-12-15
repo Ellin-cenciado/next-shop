@@ -1,8 +1,6 @@
-
 import NavBar from './NavBar';
 import { ReactNode } from 'react';
 import './globals.css';
-import React from 'react';
 
 export const metadata = {
   title: "Lin's store",

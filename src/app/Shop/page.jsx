@@ -1,7 +1,9 @@
+import Catalog from "../../components/Catalog";
+
 export default function Shop() {
   return (
     <div>
-      Empty
+      <Catalog/>
     </div>
   );
 }
