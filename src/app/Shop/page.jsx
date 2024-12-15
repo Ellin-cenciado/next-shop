@@ -7,12 +7,7 @@ import { ItemContextProvider } from "@/context/ItemContext";
 export default function Shop() {
   return (
     <div>
-      <ShopContextProvider>
-        <ShopSelector />
-        <ItemContextProvider>
-          <UserShop />
-        </ItemContextProvider>
-      </ShopContextProvider>
+
     </div>
   );
 }

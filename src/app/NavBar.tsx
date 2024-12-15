@@ -1,7 +1,5 @@
-"use client";
-import ShopSelector from "@/components/webComponents/ShopSelector.jsx";
 import Link from "next/link";
-import { ShopContextProvider } from "@/context/ShopContext";
+import React from "react";
 
 export default function NavBar() {
   return (
