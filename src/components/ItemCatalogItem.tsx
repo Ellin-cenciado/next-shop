@@ -10,6 +10,7 @@ export default function ItemCatalogItem({currentItem}: ItemCatalogItemProps){
             <title>{currentItem.getName()}</title>
             <h2>{currentItem.getDescription()}</h2>
             <h3>{currentItem.getPrice()}</h3>
+            <button>Buy</button>
         </div>
     )
 }
