@@ -1,10 +1,11 @@
 
 import { ShopItem } from "../app/ShopList/shopItems";
-import ShopContext from "../context/ShopContext";
-import { useContext } from "react";
+import {ShopContext} from "../context/ShopContext";
+import React,{ useContext } from "react";
 
 type ItemCatalogItemProps = {
     currentItem: ShopItem;
+    handleBuy: (item: ShopItem) => void;
 }
 
 export default function ItemCatalogItem({currentItem}: ItemCatalogItemProps){
